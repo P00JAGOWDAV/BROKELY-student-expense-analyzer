@@ -36,8 +36,8 @@ Python · Streamlit · pandas · Plotly · pytest · deployed on Streamlit Commu
 ## Run it locally
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/student-expense-analyzer.git
-cd student-expense-analyzer
+git clone https://github.com/P00JAGOWDAV/BROKELY-student-expense-analyzer.git
+cd BROKELY-student-expense-analyzer
 python -m venv .venv
 # Windows: .venv\Scripts\activate    macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
