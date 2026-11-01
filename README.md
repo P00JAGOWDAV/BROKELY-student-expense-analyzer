@@ -4,7 +4,7 @@
 
 Upload a month of expenses as a CSV or messy text notes. broke.ly sorts every expense into a category, shows where your money went, spots spending patterns, and gives budget tips written for students.
 
-**Live demo:** https://YOUR-APP-NAME.streamlit.app  ← replace after deploying
+**Live demo:** https://brokely.streamlit.app  ← replace after deploying
 
 ![screenshot](docs/screenshot.png)
 
