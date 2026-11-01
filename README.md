@@ -6,7 +6,9 @@ Upload a month of expenses as a CSV or messy text notes. broke.ly sorts every ex
 
 **Live demo:** https://brokely.streamlit.app  ← replace after deploying
 
-![screenshot](docs/screenshot.png)
+| Home | Damage report | Insights |
+|---|---|---|
+| ![Home](docs/screenshot-1-home.png) | ![Damage report](docs/screenshot-2-report.png) | ![Insights](docs/screenshot-3-insights.png) |
 
 ## The problem
 
