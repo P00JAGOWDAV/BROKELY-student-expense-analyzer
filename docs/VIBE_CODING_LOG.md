@@ -66,7 +66,25 @@ GitHub repo → Streamlit Community Cloud → QR code for the live URL.
 
 ## My own iterations
 
-<!-- Add the changes you made yourself here. Examples: -->
-<!-- - Asked Copilot to ... because ... -->
-<!-- - Changed the colors of ... -->
-<!-- - Found a bug when I uploaded my real bank export: ... -->
+Problems I hit while running, testing and deploying the app myself, and how I fixed them with the AI's help.
+
+| # | What happened | Cause | Fix |
+|---|---|---|---|
+| 1 | `.venv\Scripts\activate` failed: "running scripts is disabled on this system" | Windows PowerShell blocks scripts by default | Ran `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` |
+| 2 | `pip install` said "requirements.txt not found" | Unzipping created a folder inside a folder, so the terminal was in the wrong one | Moved into the inner folder and opened it as the VS Code workspace |
+| 3 | `streamlit` was "not recognized" and then "No module named streamlit" | Commands were using the system Python 3.14, not the project's virtual environment | Ran everything through `.venv\Scripts\python -m ...` |
+| 4 | Pasted text showed "8 row(s) had no readable date" | The warning fired even though dates are optional in text input | Asked the AI to show it only when most rows are dated; added 2 tests (43 passing) |
+| 5 | `git commit` said "not a git repository" | Git hadn't been initialised yet | Ran `git init` and committed the project in 5 stages |
+| 6 | `git push` was rejected with "fetch first" | GitHub created its own files when I made the repo | Force-pushed my local history to the new, empty repo |
+| 7 | The QR code pointed to the wrong URL | I chose `brokely` as the app name, but generated the QR for `brokely-pooja` | Regenerated it with `tools/make_qr.py https://brokely.streamlit.app` |
+| 8 | Screenshots showed as text on GitHub | File names didn't match the README (GitHub is case-sensitive) | Renamed them to exact lowercase names |
+
+**Extra test data:** asked the AI for varied sample files (hostel foodie, weekend shopper, tight budget, subscription hoarder, messy bank export, broken file) to test every personality and error message.
+
+## What I learned
+
+- Building in small steps and testing after each one finds bugs early
+- Reading error messages carefully usually points straight to the fix
+- Git basics: init, staged commits, push, and fixing a rejected push
+- Python virtual environments and why the right interpreter matters
+- Deploying a Python app for free and sharing it with a QR code
