@@ -1,0 +1,24 @@
+# Day scholar, living at home, budget 3000
+1 Oct bus pass 400
+2 Oct canteen lunch 70
+3 Oct chai 15
+4 Oct xerox notes 30
+6 Oct canteen lunch 70
+7 Oct samosa 20
+8 Oct printout 25
+9 Oct pen 20
+10 Oct coffee 40
+13 Oct canteen lunch 70
+14 Oct chai 15
+15 Oct library fine 30
+16 Oct recharge 199
+17 Oct samosa 20
+20 Oct canteen lunch 70
+21 Oct juice 40
+22 Oct notebook 60
+23 Oct chai 15
+24 Oct maggi 40
+27 Oct canteen lunch 70
+28 Oct chai 15
+29 Oct haircut 100
+30 Oct momos 60
